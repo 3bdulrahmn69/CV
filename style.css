@@ -44,13 +44,13 @@ header h2 {
 
 .wrapper {
     width: 100%;
-    height: auto;
+    height: 1700px;
     display: flex;
 }
 
 aside {
     width: 35%;
-    height: 1500px;
+    height: 100%;
     background-color: #34393E;
     color: #fff;
     padding: 20px 10px;
@@ -118,6 +118,7 @@ main p {
     color: #000;
     letter-spacing: 2px;
     line-height: 30px;
+    text-wrap: wrap;
 }
 main hr {
     width: 80%;
@@ -135,6 +136,43 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    gap: 10px;
+}
+footer button, footer a {
+    width: 150px;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+footer button:hover, footer a:hover {
+    background-color: #bcbcbc;
+    color: #fff;
+}
+footer a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 footer p {
     font-weight: 900;
     font-size: 20px;
@@ -142,30 +180,9 @@ footer p {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-footer a {
-    color: #fff;
-    text-decoration: underline;
-}
 footer hr {
     width: 80%;
     margin: 15px auto;
-}
-footer button {
-    width: 150px;
-    height: 40px;
-    background-color: #fff;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    font-weight: 100;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-footer button:hover {
-    background-color: #bcbcbc;
-    color: #fff;
 }
 
 @media (max-width: 768px) {
